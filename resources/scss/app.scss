@@ -1,1 +1,132 @@
 @import '~bootstrap/scss/bootstrap';
+
+.jumbo {
+     img {
+          width: 100%;
+          max-height: 600px;
+          object-fit: cover;
+          object-position: top;
+     }
+}
+
+.navbar {
+     width: 100%;
+
+     .menu {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+
+          ul {
+               display: flex;
+               list-style: none;
+               justify-content: center;
+               align-items: center;
+
+               li {
+                    margin: 7px;
+               }
+          }
+     }
+}
+
+.carta{
+     color: white;
+     margin: 20px 0px;
+     img{
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+     }
+}
+
+.striscia{
+     .col-2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          margin: 20px;
+          h4{
+               padding: 20px;
+          }
+          img{
+               max-width: 100px;
+          }
+     }
+}
+
+.top_footer{
+     background-image: url('../img/footer-bg.jpg');
+     background-size: cover;
+     display: flex;
+     color: #a6a6a6;
+
+     .content_footer{
+          display: flex;
+     }
+     .menu_col{
+          margin-right: 40px;
+          padding: 30px;
+
+          h2{
+               margin-left:20px ;
+          }
+     }
+}
+
+.content_bt{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+    
+     button{   
+          border: 3px solid blue;
+          background-color: rgba(152, 152, 152, 0);
+          padding: 10px;
+          color: white;
+     }
+     .right_bt_content{
+          
+          h2{
+               color: blue;
+               position: relative;
+               top: 10px;
+
+          }
+     }
+     .right_bt_content *{
+          padding: 5px;
+     }
+}
+
+.bottom_footer{
+     background-color: #2a2a2a;
+}
+
+.single_photo{
+
+     position: relative;
+     .bg-primary{
+          height: 100px;
+     }
+     img{
+          width: 350px;
+         position: absolute;
+     //     top: 0px;
+         bottom: 40px;
+         left: 300px;
+     }
+}
+
+.prezzo{
+     height: 50px;
+     background-color: rgb(25, 181, 25);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
