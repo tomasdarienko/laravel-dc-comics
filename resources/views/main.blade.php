@@ -9,13 +9,13 @@
 
                @foreach($comics as $comic)
                <div class="col-2">
-                    <!-- <a href="route('single',['param' => $comic['id']])"> -->
+                    <a href="{{route('single',['param' => $comic['sale_date']])}}">
                          <div class="carta">
 
                               <img src="{{ $comic['thumb']}}" alt="" class="img-fluid">
                               <h5>{{ $comic['title']}}</h5>
                          </div>
-                    <!-- </a> -->
+                    </a>
                </div>
                @endforeach
 
