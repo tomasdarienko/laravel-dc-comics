@@ -19,7 +19,15 @@
                </div>
                @endforeach
 
-          </div> 
+               <div class="col-12 d-flex justify-content-center p-5">
+                    <div>
+                         <a href=" {{ route('comics.create') }} ">
+                              <button class="btn btn-primary">Aggiungi un fumetto</button>
+                         </a>
+                    </div>
+               </div>
+
+          </div>
      </div>
 </div>
 <div class="bg-primary">
@@ -27,7 +35,7 @@
           <div class="row striscia">
                <div class="col-2">
                     <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="">
-                    <h4>digital comics</h4>
+                    <h4>digital comic</h4>
                </div>
                <div class="col-2">
                     <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="">

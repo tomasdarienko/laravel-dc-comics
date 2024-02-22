@@ -31,3 +31,8 @@ Route::get('/main/{param}', function($param) {
 
     return view('single', compact('comic'));
 })->name('single');
+
+
+// Route::get('newcomic', function () {
+//     return view('newcomic');
+// })->name('newcomic');
