@@ -9,6 +9,12 @@
           <div class="col-12">
                <h1 class="d-flex justify-content-center p-5">Modifica Fumetto</h1>
 
+               <form action="{{ route('comics.destroy',['comic'=>$comic->id])}}">
+                         @csrf
+                         @method('DELETE')
+                         <button type="submit" class="btn btn-danger">Cancella</button>
+                    </form>
+
                <form action="{{route('comics.update',$comic->id)}}" method="post">
 
                     @csrf

@@ -12,7 +12,7 @@
                 <form action="{{route('comics.store')}}" method="post">
 
                 @csrf
-                
+
                     <div class="form-group my-3">
                          <input type="text" name="title" id="title" class="form-control" placeholder="title" required>
                     </div>
@@ -41,7 +41,7 @@
                          <input type="text" name="writers" id="writers" class="form-control" placeholder="writers" required>
                     </div>
                     <div class="form-group my-3">
-                         <button class="btn btn-success">salva</button>
+                         <button type="submit" class="btn btn-success">salva</button>
                     </div>
                </form>
           </div>
