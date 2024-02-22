@@ -9,7 +9,7 @@
 
                @foreach($comics as $comic)
                <div class="col-2">
-                    <a href="{{route('single',['param' => $comic['sale_date']])}}">
+                    <a href="{{route('comics.show',['comic' => $comic['id']])}}">
                          <div class="carta">
 
                               <img src="{{ $comic['thumb']}}" alt="" class="img-fluid">
