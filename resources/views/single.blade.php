@@ -12,7 +12,7 @@
      <div class="row py-5">
           <div class="col-8">
 
-         
+
                <h2>{{ $comic['title']}}</h2>
 
                <div class="col-12 prezzo p-2">
@@ -51,7 +51,13 @@
                          <p> {{ $comic['type']}}</p>
                     </div>
 
-                    <a href="{{route('comics.edit',['comic'=>$comic->id])}}" class="btn btn-primary">modifica</a>
+                    <a href="{{route('comics.edit',['comic'=>$comic->id])}}" class="btn btn-primary my-2">modifica</a>
+
+                    <form action="{{ route('comics.destroy',['comic'=>$comic->id])}}">
+                         @csrf
+                         @method('DELETE')
+                         <button type="submit" class="btn btn-danger">Cancella</button>
+                    </form>
                </div>
 
           </div>
